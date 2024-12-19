@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scheme-dark dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <div className="isolate">{children}</div>
       </body>
     </html>
   );
